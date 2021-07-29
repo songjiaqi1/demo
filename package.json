@@ -1,0 +1,23 @@
+{
+  "name": "sjq-ci-demo",
+  "version": "1.0.0",
+  "description": "my first travis demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songjiaqi1/demo.git"
+  },
+  "keywords": [
+    "ci",
+    "demo"
+  ],
+  "author": "sjq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songjiaqi1/demo/issues"
+  },
+  "homepage": "https://github.com/songjiaqi1/demo#readme"
+}
