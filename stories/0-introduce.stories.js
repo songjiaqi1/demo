@@ -6,5 +6,6 @@ import '../public/media/dtable-font.css';
 import '../public/media/seafile-ui.css';
 import './css/story-cover.css';
 
+console.log('aaaaaaaa');
 storiesOf('Introduce|welcome', module)
   .add('welcome', () => (<Welcome />))
