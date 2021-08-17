@@ -1,9 +1,9 @@
 name: Node CI
 
-on: [push]
+on: [pull_requst]
 
 jobs:
-  build:
+  build-pack:
 
     runs-on: ubuntu-latest
 
@@ -23,4 +23,3 @@ jobs:
         ./node_modules/.bin/jest --ci
       env:
         CI: true
-

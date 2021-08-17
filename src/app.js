@@ -9,7 +9,7 @@ class App extends React.Component {
   onDeleteCollaborator = () => {
     //
   }
-  
+
   render() {
     let collaborators = [
       {
