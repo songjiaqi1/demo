@@ -46,7 +46,7 @@ export default class ShowCode extends Component {
     const { fold } = this.state;
 
     const codeClass = cn('storybook-code-wrapper', {'storybook-code-wrapper-fold': fold});
-
+    console.log('render code block');
     return (
       <div className='storybook-wrapper'>
         {<div className='storybook-code-btn' onClick={this.handleCodeFold}>{fold ? 'ShowCode' : 'hideCode'}</div>}
