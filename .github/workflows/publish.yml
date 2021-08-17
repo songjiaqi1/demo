@@ -15,9 +15,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        registry-url: 'https://registry.npmjs.org'
     - name: build book
       run: |
         npm install
         npm run build-storybook
+        npm publish
       env:
         CI: true
+        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
