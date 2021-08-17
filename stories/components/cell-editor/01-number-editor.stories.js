@@ -138,7 +138,7 @@ storiesOf('Editors|number-editor', module)
   .add('number editor component', () => {
     return (
       <div>
-        <h1>Scene One: editor permission is readonly</h1>
+        <h1>Scene One111123dw3dewefdwedew</h1>
         <ShowCode sub={"number format: 'NUMBER' "}>
           <NumberEditor 
             isReadOnly={true}
