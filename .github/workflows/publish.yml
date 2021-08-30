@@ -19,6 +19,7 @@ jobs:
     - name: build book
       run: |
         npm install
+        echo ${{ secrets.NODE_AUTH_TOKEN }}
         npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
