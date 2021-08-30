@@ -1,6 +1,6 @@
 {
   "name": "sjq-component-ui",
-  "version": "0.1.25",
+  "version": "0.1.26",
   "main": "./es/index.js",
   "dependencies": {
     "@seafile/seafile-calendar": "0.0.12",
