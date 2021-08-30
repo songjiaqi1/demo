@@ -1,27 +1,29 @@
-name: publish npm package and update version
-on: 
+name: 发布util
+
+on:
   push:
-    branches:
-      - master
+    branches: [master]
 jobs:
-  build: 
+  publish:
+    name: 发布util工作流
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
+
+    # 指出这个build任务的步骤
     steps:
-    - uses: actions/checkout@v1
-    - name: build-storybook
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-        registry-url: 'https://registry.npmjs.org'
-    - name: publish book
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-        CI: false
-      run: |
-        npm install
-        echo "aaa      aaaa  akjndejkwdnwjkendwwedwkjd-------------------------------------------------------"
-        echo "${{ secrets.NODE_AUTH_TOKEN }}"
-        npm publish
+      - uses: actions/checkout@v1
+
+      - name: 初始化node环境
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+
+      - name: publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
+        run: |
+          npm install
+          npm publish
