@@ -19,7 +19,7 @@ jobs:
     - name: build book
       run: |
         npm install
-        echo "aaa        akjndejkwdnwjkendwwedwkjd-------------------------------------------------------"
+        echo "aaa      aaaa  akjndejkwdnwjkendwwedwkjd-------------------------------------------------------"
         echo "${{ secrets.NODE_AUTH_TOKEN }}"
         npm publish
       env:
