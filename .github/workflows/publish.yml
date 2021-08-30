@@ -15,8 +15,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: publish book
+      uses: actions/setup-node@v1
+      with:
         registry-url: 'https://registry.npmjs.org'
-    - name: build book
       run: |
         npm install
         echo "aaa      aaaa  akjndejkwdnwjkendwwedwkjd-------------------------------------------------------"
